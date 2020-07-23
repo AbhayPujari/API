@@ -1502,7 +1502,7 @@
          <passwordHash>?</passwordHash>\r
       </def:customerCustomerRepositoryV1SaveRequest>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1/customerCustomerRepositoryV1PortType/customerCustomerRepositoryV1SaveRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="7c23ee51-4ba8-41ac-99d7-25709ab23140" name="Using Property transfer and Property Expansion"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="b7d0918d-2389-451a-a2e7-895739af3b14" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Customer Details" searchProperties="true"><con:settings/><con:testStep type="properties" name="Customer" id="3b36197a-7660-42fb-a35f-5b6076924926"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Email</con:name><con:value>Abhay@gmail.com</con:value></con:property><con:property><con:name>FirstName</con:name><con:value>Abhay</con:value></con:property><con:property><con:name>LastName</con:name><con:value>Pujari</con:value></con:property><con:property><con:name>DOB</con:name><con:value>1987-10-15</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Add Customer Service" id="2218a942-a901-4350-8297-e4ef42631111"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1Save</con:operation><con:request name="Add Customer Service" id="c963389f-a001-408e-b693-81aadd40bea8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1/customerCustomerRepositoryV1PortType/customerCustomerRepositoryV1SaveRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="7c23ee51-4ba8-41ac-99d7-25709ab23140" name="Using Property transfer and Property Expansion"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="b7d0918d-2389-451a-a2e7-895739af3b14" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Customer Details" searchProperties="true"><con:settings/><con:testStep type="properties" name="Customer" id="3b36197a-7660-42fb-a35f-5b6076924926"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Email</con:name><con:value>nilangipujari2@gmail.com</con:value></con:property><con:property><con:name>FirstName</con:name><con:value>Nilangi1</con:value></con:property><con:property><con:name>LastName</con:name><con:value>Pujari1</con:value></con:property><con:property><con:name>DOB</con:name><con:value>1987-10-15</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Add Customer Service" id="2218a942-a901-4350-8297-e4ef42631111"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1Save</con:operation><con:request name="Add Customer Service" id="c963389f-a001-408e-b693-81aadd40bea8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
    <soap:Header/>\r
    <soap:Body>\r
       <def:customerCustomerRepositoryV1SaveRequest>\r
@@ -1555,7 +1555,7 @@ declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCus
    <soap:Header/>
    <soap:Body>
       <def:customerCustomerRepositoryV1GetByIdRequest>
-         <customerId>3690</customerId>
+         <customerId>4275</customerId>
       </def:customerCustomerRepositoryV1GetByIdRequest>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="274a147e-92f9-409c-8ad2-9a7e40f63b76"/><con:assertion type="Schema Compliance" id="8e33d553-27d0-4399-81d5-608d5d174a35"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="149f59c6-35b4-4085-b2c6-69c1a95c8315"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Customer ID1 Transfer" id="55d6424b-4fa1-43c1-987b-16e62946a54f"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>ID</con:name><con:sourceType>Request</con:sourceType><con:sourceStep>Get Customer by ID Service</con:sourceStep><con:sourcePath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
@@ -1566,7 +1566,7 @@ declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCus
    <soap:Header/>
    <soap:Body>
       <def:customerCustomerRepositoryV1DeleteByIdRequest>
-         <customerId>3690</customerId>
+         <customerId>4275</customerId>
       </def:customerCustomerRepositoryV1DeleteByIdRequest>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4bab1903-377c-4f6a-95a1-42d9c37444b6"/><con:assertion type="Schema Compliance" id="1b8b0da1-d406-4a4f-a089-a7ebbe3362b3"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="64f22a0c-fc66-46eb-80c7-65cf2d65f814"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="65ae3e87-d5b8-4e76-a365-56b88a03a8d6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Customer Details Using Script" searchProperties="true"><con:settings/><con:testStep type="request" name="Add Customer Service" id="48bd2f21-dc62-4dad-8b16-2125fc524180"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1Save</con:operation><con:request name="Add Customer Service" id="c963389f-a001-408e-b693-81aadd40bea8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
@@ -1574,7 +1574,7 @@ declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCus
    <soap:Body>
       <def:customerCustomerRepositoryV1SaveRequest>
          <customer>
-          <email>Nilangi@gmail.com</email>
+          <email>AbhayCP4@gmail.com</email>
                   <firstname>Nilangi</firstname>
                   <lastname>Pujari</lastname>
                   <dob>1989-10-03</dob>
@@ -1640,20 +1640,20 @@ context.testCase.setPropertyValue("id",id)
          <customerId>${#TestCase#id}</customerId>
       </def:customerCustomerRepositoryV1DeleteByIdRequest>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4bab1903-377c-4f6a-95a1-42d9c37444b6"/><con:assertion type="Schema Compliance" id="1b8b0da1-d406-4a4f-a089-a7ebbe3362b3"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="64f22a0c-fc66-46eb-80c7-65cf2d65f814"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="bd88d230-3976-4aae-a924-87ffde3b7645" disabled="true"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4bab1903-377c-4f6a-95a1-42d9c37444b6"/><con:assertion type="Schema Compliance" id="1b8b0da1-d406-4a4f-a089-a7ebbe3362b3"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="64f22a0c-fc66-46eb-80c7-65cf2d65f814"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="bd88d230-3976-4aae-a924-87ffde3b7645"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
 import com.eviware.soapui.model.testsuite.TestRunner.Status
 
 def Request = testRunner.testCase.testSuite.project.testSuites["Using Property transfer and Property Expansion"].testCases["Customer Details Using Script"].getTestStepByName("Add Customer Service").getPropertyValue("Request")
 log.info Request
 def holder = new XmlHolder(Request)
-holder.setNodeValue("//*:email","AbhayCP4@gmail.com")
+holder.setNodeValue("//*:email","AbhayCP@gmail.com")
 def Updated = holder.getXml()
 testRunner.testCase.testSuite.project.testSuites["Using Property transfer and Property Expansion"].testCases["Customer Details Using Script"].getTestStepByName("Add Customer Service").setPropertyValue("Request",Updated)
 def tc =testRunner.testCase.testSuite.project.testSuites["Using Property transfer and Property Expansion"].testCases["Customer Details Using Script"]
 log.info tc
 tc.run(null,false)
 
-</script></con:config></con:testStep><con:testStep type="groovy" name="Property Expansion script" id="6d04478a-ef67-4bf3-a91f-e18a955fb394" disabled="true"><con:settings/><con:config><script>import com.eviware.soapui.model.testsuite.TestRunner.Status
+</script></con:config></con:testStep><con:testStep type="groovy" name="Property Expansion script" id="6d04478a-ef67-4bf3-a91f-e18a955fb394"><con:settings/><con:config><script>import com.eviware.soapui.model.testsuite.TestRunner.Status
 
 def TC = testRunner.testCase.testSuite.project.testSuites["Using Property transfer and Property Expansion"].testCases["Customer Details"]
 TC.testSteps["Customer"].setPropertyValue("Email","Abhay3@gmail.com")
@@ -1667,7 +1667,7 @@ assert runner.status != Status.FAILED : runner.reason
 
 /// assert that only four steps ran!!
 assert runner.results.size() == 7
-</script></con:config></con:testStep><con:properties><con:property><con:name>id</con:name><con:value>3712</con:value></con:property></con:properties></con:testCase><con:testCase id="e782a654-199b-4b12-931e-bc94bfe7bf5d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="System Testing" searchProperties="true"><con:settings/><con:testStep type="groovy" name="System Testing" id="c123c89c-1e53-48ea-8821-9386ed74b5ad"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+</script></con:config></con:testStep><con:properties><con:property><con:name>id</con:name><con:value>4291</con:value></con:property></con:properties></con:testCase><con:testCase id="e782a654-199b-4b12-931e-bc94bfe7bf5d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="System Testing" searchProperties="true"><con:settings/><con:testStep type="groovy" name="System Testing" id="c123c89c-1e53-48ea-8821-9386ed74b5ad"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
 import com.eviware.soapui.model.testsuite.TestRunner.Status
 
 def Request = testRunner.testCase.testSuite.project.testSuites["Using Property transfer and Property Expansion"].testCases["Customer Details Using Script"].getTestStepByName("Add Customer Service").getPropertyValue("Request")
@@ -1701,4 +1701,48 @@ assert runner.status != Status.FAILED : runner.reason
 /// assert that only four steps ran!!
 assert runner.results.size() == 7
 </script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8b69edc7-c926-4bed-bb98-29849089d2d4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Data Driven" searchProperties="true"><con:settings/><con:testStep type="groovy" name="BDD using multiple data" id="bf0e35c2-caab-4f81-8d1a-487156443136"><con:settings/><con:config><script>import jxl.*
-import  com.eviware.soapui.model.</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+import com.eviware.soapui.model.testsuite.TestRunner.Status
+
+String Customer_File_Path = "C:/Users/AbhayPujari/Documents/SDET_Training/API Assignment/Customer.xls"
+log.info Customer_File_Path
+File Customer = new File(Customer_File_Path)
+ Workbook wb = Workbook.getWorkbook(Customer)
+Sheet sh = wb.getSheet("Sheet1")
+def rowSize=sh.getRows()
+log.info rowSize
+def colSize=sh.getColumns()
+log.info colSize
+def tc
+def runner
+
+for(def i=0;i&lt;rowSize;i++)
+{
+	for(def j=0;j&lt;colSize;j++)
+	{
+		if (j ==0)
+		{
+	     	Email=sh.getCell(j,i).getContents()
+			log.info "Email is " +Email
+		}
+		else if(j==1)
+		{
+			firstname=sh.getCell(j,i).getContents()
+			log.info "Firrst Name is " +firstname
+		}
+		else if (j==2)
+		{
+			lastname=sh.getCell(j,i).getContents()
+			log.info "Last Name is "+lastname
+		}
+			
+	}
+	         tc = testRunner.testCase.testSuite.project.testSuites["Using Property transfer and Property Expansion"].testCases["Customer Details"]
+			tc.testSteps["Customer"].setPropertyValue("Email",Email)
+			tc.testSteps["Customer"].setPropertyValue("firstname",firstname)
+			tc.testSteps["Customer"].setPropertyValue("lastname",lastname)
+			//tc.testSteps["Customer"].setPropertyValue("dob",dob)
+			log.info " Details $i are $Email ,$firstname,$lastname"
+			runner=tc.run(null,false)
+			log.info "Number of testSteps Executes are" +runner.results.size() 
+	        
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
