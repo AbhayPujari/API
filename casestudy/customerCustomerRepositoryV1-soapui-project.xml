@@ -1555,7 +1555,7 @@ declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCus
    <soap:Header/>
    <soap:Body>
       <def:customerCustomerRepositoryV1GetByIdRequest>
-         <customerId>4320</customerId>
+         <customerId>4547</customerId>
       </def:customerCustomerRepositoryV1GetByIdRequest>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="274a147e-92f9-409c-8ad2-9a7e40f63b76"/><con:assertion type="Schema Compliance" id="8e33d553-27d0-4399-81d5-608d5d174a35"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="149f59c6-35b4-4085-b2c6-69c1a95c8315"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Customer ID1 Transfer" id="55d6424b-4fa1-43c1-987b-16e62946a54f"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>ID</con:name><con:sourceType>Request</con:sourceType><con:sourceStep>Get Customer by ID Service</con:sourceStep><con:sourcePath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
@@ -1566,7 +1566,7 @@ declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCus
    <soap:Header/>
    <soap:Body>
       <def:customerCustomerRepositoryV1DeleteByIdRequest>
-         <customerId>4320</customerId>
+         <customerId>4547</customerId>
       </def:customerCustomerRepositoryV1DeleteByIdRequest>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4bab1903-377c-4f6a-95a1-42d9c37444b6"/><con:assertion type="Schema Compliance" id="1b8b0da1-d406-4a4f-a089-a7ebbe3362b3"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="64f22a0c-fc66-46eb-80c7-65cf2d65f814"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="65ae3e87-d5b8-4e76-a365-56b88a03a8d6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Customer Details Using Script" searchProperties="true"><con:settings/><con:testStep type="request" name="Add Customer Service" id="48bd2f21-dc62-4dad-8b16-2125fc524180"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1Save</con:operation><con:request name="Add Customer Service" id="c963389f-a001-408e-b693-81aadd40bea8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
@@ -1640,7 +1640,7 @@ context.testCase.setPropertyValue("id",id)
          <customerId>${#TestCase#id}</customerId>
       </def:customerCustomerRepositoryV1DeleteByIdRequest>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4bab1903-377c-4f6a-95a1-42d9c37444b6"/><con:assertion type="Schema Compliance" id="1b8b0da1-d406-4a4f-a089-a7ebbe3362b3"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="64f22a0c-fc66-46eb-80c7-65cf2d65f814"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>id</con:name><con:value>4315</con:value></con:property></con:properties></con:testCase><con:testCase id="e782a654-199b-4b12-931e-bc94bfe7bf5d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="System Testing" searchProperties="true"><con:settings/><con:testStep type="groovy" name="System Testing" id="c123c89c-1e53-48ea-8821-9386ed74b5ad"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4bab1903-377c-4f6a-95a1-42d9c37444b6"/><con:assertion type="Schema Compliance" id="1b8b0da1-d406-4a4f-a089-a7ebbe3362b3"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="64f22a0c-fc66-46eb-80c7-65cf2d65f814"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>id</con:name><con:value>4542</con:value></con:property></con:properties></con:testCase><con:testCase id="e782a654-199b-4b12-931e-bc94bfe7bf5d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="System Testing" searchProperties="true"><con:settings/><con:testStep type="groovy" name="System Testing" id="c123c89c-1e53-48ea-8821-9386ed74b5ad"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
 import com.eviware.soapui.model.testsuite.TestRunner.Status
 
 def Request = testRunner.testCase.testSuite.project.testSuites["Using Property transfer and Property Expansion"].testCases["Customer Details Using Script"].getTestStepByName("Add Customer Service").getPropertyValue("Request")
@@ -1718,4 +1718,230 @@ for(def i=0;i&lt;rowSize;i++)
 			runner=tc.run(null,false)
 			log.info "Number of testSteps Executes are" +runner.results.size() 
 	        
-}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f2f661c7-0565-4d43-b320-7c8afc3d8537" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="E2E With Properties And Property Expansion" searchProperties="true"><con:settings/><con:testStep type="properties" name="Customer" id="cfdcc22c-5e01-4dac-b476-69e7ffb2ac6a"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Email</con:name><con:value>NAPujari@gmail.com</con:value></con:property><con:property><con:name>FirstName</con:name><con:value>Nil</con:value></con:property><con:property><con:name>LastName</con:name><con:value>Puj</con:value></con:property><con:property><con:name>DOB</con:name><con:value>1987-10-15</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Add Customer Service" id="b1c60158-6cbb-4fb7-be69-24de1cfb8a38"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1Save</con:operation><con:request name="Add Customer Service" id="c963389f-a001-408e-b693-81aadd40bea8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:customerCustomerRepositoryV1SaveRequest>\r
+         <customer>\r
+          <email>${Customer#Email}</email>
+                  <firstname>${Customer#FirstName}</firstname>
+                  <lastname>${Customer#LastName}</lastname>
+                  <dob>${Customer#DOB}</dob>
+                  <addresses>
+                     <item>
+                        <region>
+                           <regionCode>KA</regionCode>
+                           <region>Karnataka</region>
+                        </region>
+                        <countryId>IN</countryId>
+                        <street>
+                           <item>#55, 1 st Main Road</item>
+                        </street>
+                        <telephone>+91 9876543210</telephone>
+                        <postcode>560023</postcode>
+                        <city>Bengaluru</city>
+                        <firstname>Krishna</firstname>
+                        <lastname>Mohan</lastname>
+                        <defaultShipping>true</defaultShipping>
+                        <defaultBilling>true</defaultBilling>
+                     </item>
+                  </addresses>	
+         </customer>\r
+         <!--Optional:-->\r
+         <passwordHash>?</passwordHash>\r
+      </def:customerCustomerRepositoryV1SaveRequest>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4a091450-8515-4f59-9084-813b14d6b48e"/><con:assertion type="Schema Compliance" id="19c0bced-ad2d-4a79-b5b1-76814c1a8135"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="0ce825b8-3c1f-41b3-833b-03974db43df6"/><con:assertion type="GroovyScriptAssertion" id="eeb67a3c-52e3-449b-9f04-4313f7f197ef" name="Script Assertion"><con:configuration><scriptText>def Id = context.expand('${#Response#//*:id}')
+log.info Id
+context.testCase.setPropertyValue("Id",Id)
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Get Customer List Service" id="23f4d12f-5cd1-456a-b9e3-6c0f38b61f42"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1GetList</con:operation><con:request name="Get Customer List Service" id="71421096-705f-4ca4-b9d8-57e358376dd5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:customerCustomerRepositoryV1GetListRequest>\r
+         <searchCriteria>\r
+    
+         </searchCriteria>\r
+      </def:customerCustomerRepositoryV1GetListRequest>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7ee9c858-7a0c-41e5-9db9-74470329aedd"/><con:assertion type="Schema Compliance" id="0408a379-d951-460d-866b-d6390ffa38a4"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="eb63c622-7aba-413f-bb4e-cf459807f9db"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Customer ID Transfer" id="923e93a1-f84c-442f-8c07-3dd7bc6245d0" disabled="true"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>ID</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Add Customer Service</con:sourceStep><con:sourcePath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1';
+//*:id
+
+</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>Get Customer by ID Service</con:targetStep><con:targetPath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1';
+
+//*:customerId</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="Get Customer by ID Service" id="073e33dd-346b-4fac-8608-61b9c7a30b33"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1GetById</con:operation><con:request name="Get Customer by ID Service" id="28217313-bab6-4dd0-8785-0f51220143e4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1GetByIdRequest>
+         <customerId>${#TestCase#Id}</customerId>
+      </def:customerCustomerRepositoryV1GetByIdRequest>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="274a147e-92f9-409c-8ad2-9a7e40f63b76"/><con:assertion type="Schema Compliance" id="8e33d553-27d0-4399-81d5-608d5d174a35"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="149f59c6-35b4-4085-b2c6-69c1a95c8315"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Customer ID1 Transfer" id="7212254c-2bd5-498d-ad38-03781eb8c0a5" disabled="true"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>ID</con:name><con:sourceType>Request</con:sourceType><con:sourceStep>Get Customer by ID Service</con:sourceStep><con:sourcePath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1';
+//*:customerId</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>DeleteByID Service</con:targetStep><con:targetPath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1';
+//*:customerId</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="DeleteByID Service" id="f0b2e0d4-d09b-4f90-a5cb-2865f95d1bf2"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1DeleteById</con:operation><con:request name="DeleteByID Service" id="99ea5621-b84f-4b7c-95c9-d191ca22b01f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1DeleteByIdRequest>
+         <customerId>${#TestCase#Id}</customerId>
+      </def:customerCustomerRepositoryV1DeleteByIdRequest>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4bab1903-377c-4f6a-95a1-42d9c37444b6"/><con:assertion type="Schema Compliance" id="1b8b0da1-d406-4a4f-a089-a7ebbe3362b3"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="64f22a0c-fc66-46eb-80c7-65cf2d65f814"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>Id</con:name><con:value>4550</con:value></con:property></con:properties></con:testCase><con:testCase id="a8a645ca-774c-4730-b872-8decb7280719" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="JDBC" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="Customer JDBC" id="c9bafb7b-18c7-4f1b-8978-d131223a5ab9"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/CaseStudyAPI?user=root&amp;password=root</con:connectionString><con:query>Select * from customer;
+</con:query><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="Count JDBC" id="967ef624-3d64-4bb2-b884-ae91bf2fc9cb"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/CaseStudyAPI?user=root&amp;password=root</con:connectionString><con:query>Select count(*) from customer;</con:query><con:properties/></con:config></con:testStep><con:testStep type="groovy" name="JDBC" id="d6890bed-8e79-4994-83af-1c29b2ce1348"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.model.testsuite.TestRunner.Status
+
+def res = testRunner.testCase.getTestStepByName("Customer JDBC").getPropertyValue("ResponseAsXml")
+def res_count = testRunner.testCase.getTestStepByName("Count JDBC").getPropertyValue("ResponseAsXml")
+log.info res_count
+def holder=new XmlHolder(res)
+def holder_count=new XmlHolder(res_count)
+def count = holder_count.getNodeValue("//ResultSet/Row/COUNT")
+log.info "count is " +count
+
+for(def i=1;i&lt;=count.toInteger();i++){
+log.info "i value is "+i
+def email = holder.getNodeValue("//ResultSet/Row[$i]/CUSTOMER.EMAIL")
+def firstname = holder.getNodeValue("//ResultSet/Row[$i]/CUSTOMER.FIRSTNAME")
+def lastname = holder.getNodeValue("//ResultSet/Row[$i]/CUSTOMER.LASTNAME")
+
+def tc=testRunner.testCase.testSuite.testCases['E2E With Properties And Property Expansion']
+//set values to properties that are fetched from DB
+tc.testSteps['Customer'].setPropertyValue('Email',email)
+tc.testSteps['Customer'].setPropertyValue('FirstName',firstname)
+tc.testSteps['Customer'].setPropertyValue('LastName',lastname)
+log.info "Email is $email"
+log.info "FirstName is $firstname"
+log.info "LastName is $lastname"
+def runner=tc.run(null,false)
+log.info "Number of steps executed are "+runner.results.size()
+// assert that it didn't fail
+assert runner.status != Status.FAILED : runner.reason
+
+/// assert that only four steps ran!!
+assert runner.results.size() == 5
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="110418da-6d5b-4dd3-8bcb-effacdeb3e38" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Conditional Goto" searchProperties="true"><con:settings/><con:testStep type="properties" name="Customer" id="35ddb69f-0574-41c1-b8cd-d14a04e89d39"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Email</con:name><con:value>NAPujari@gmail.com</con:value></con:property><con:property><con:name>FirstName</con:name><con:value>Nil</con:value></con:property><con:property><con:name>LastName</con:name><con:value>Puj</con:value></con:property><con:property><con:name>DOB</con:name><con:value>1987-10-15</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Add Customer Service" id="174c6035-51f3-4ed0-9ebd-fee53069c739"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1Save</con:operation><con:request name="Add Customer Service" id="c963389f-a001-408e-b693-81aadd40bea8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:customerCustomerRepositoryV1SaveRequest>\r
+         <customer>\r
+          <email>${Customer#Email}</email>
+                  <firstname>${Customer#FirstName}</firstname>
+                  <lastname>${Customer#LastName}</lastname>
+                  <dob>${Customer#DOB}</dob>
+                  <addresses>
+                     <item>
+                        <region>
+                           <regionCode>KA</regionCode>
+                           <region>Karnataka</region>
+                        </region>
+                        <countryId>IN</countryId>
+                        <street>
+                           <item>#55, 1 st Main Road</item>
+                        </street>
+                        <telephone>+91 9876543210</telephone>
+                        <postcode>560023</postcode>
+                        <city>Bengaluru</city>
+                        <firstname>Krishna</firstname>
+                        <lastname>Mohan</lastname>
+                        <defaultShipping>true</defaultShipping>
+                        <defaultBilling>true</defaultBilling>
+                     </item>
+                  </addresses>	
+         </customer>\r
+         <!--Optional:-->\r
+         <passwordHash>?</passwordHash>\r
+      </def:customerCustomerRepositoryV1SaveRequest>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4a091450-8515-4f59-9084-813b14d6b48e"/><con:assertion type="Schema Compliance" id="19c0bced-ad2d-4a79-b5b1-76814c1a8135"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="0ce825b8-3c1f-41b3-833b-03974db43df6"/><con:assertion type="GroovyScriptAssertion" id="eeb67a3c-52e3-449b-9f04-4313f7f197ef" name="Script Assertion"><con:configuration><scriptText>def Id = context.expand('${#Response#//*:id}')
+log.info Id
+context.testCase.setPropertyValue("Id",Id)
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="goto" name="Conditional Goto" id="bcb636c6-035d-42d9-b730-b9355179ac25"><con:settings/><con:config xsi:type="con:GotoStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:condition><con:name>id</con:name><con:type>XPATH</con:type><con:expression>declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1';
+declare namespace env='http://www.w3.org/2003/05/soap-envelope';
+exists(//*:id)
+</con:expression><con:targetStep>DeleteByID Service</con:targetStep></con:condition></con:config></con:testStep><con:testStep type="request" name="DeleteByID Service" id="d7fc5b7c-73c8-4250-ba72-7683db11ee42"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1DeleteById</con:operation><con:request name="DeleteByID Service" id="99ea5621-b84f-4b7c-95c9-d191ca22b01f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1DeleteByIdRequest>
+         <customerId>${#TestCase#Id}</customerId>
+      </def:customerCustomerRepositoryV1DeleteByIdRequest>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4bab1903-377c-4f6a-95a1-42d9c37444b6"/><con:assertion type="Schema Compliance" id="1b8b0da1-d406-4a4f-a089-a7ebbe3362b3"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="64f22a0c-fc66-46eb-80c7-65cf2d65f814"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>Id</con:name><con:value>4552</con:value></con:property></con:properties></con:testCase><con:testCase id="2d086342-9a97-444f-aacc-65f73630ff58" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Conditional Goto using Script" searchProperties="true"><con:settings/><con:testStep type="properties" name="Customer" id="bd5d06d0-3596-4d74-8c4c-811753ef267e"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Email</con:name><con:value>NAPujari@gmail.com</con:value></con:property><con:property><con:name>FirstName</con:name><con:value>Abhay</con:value></con:property><con:property><con:name>LastName</con:name><con:value>Puj</con:value></con:property><con:property><con:name>DOB</con:name><con:value>1987-10-15</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Add Customer Service" id="e077d1e1-67b8-4ec6-a911-3fc81583f32f"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1Save</con:operation><con:request name="Add Customer Service" id="c963389f-a001-408e-b693-81aadd40bea8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:customerCustomerRepositoryV1SaveRequest>\r
+         <customer>\r
+          <email>${Customer#Email}</email>
+                  <firstname>${Customer#FirstName}</firstname>
+                  <lastname>${Customer#LastName}</lastname>
+                  <dob>${Customer#DOB}</dob>
+                  <addresses>
+                     <item>
+                        <region>
+                           <regionCode>KA</regionCode>
+                           <region>Karnataka</region>
+                        </region>
+                        <countryId>IN</countryId>
+                        <street>
+                           <item>#55, 1 st Main Road</item>
+                        </street>
+                        <telephone>+91 9876543210</telephone>
+                        <postcode>560023</postcode>
+                        <city>Bengaluru</city>
+                        <firstname>Krishna</firstname>
+                        <lastname>Mohan</lastname>
+                        <defaultShipping>true</defaultShipping>
+                        <defaultBilling>true</defaultBilling>
+                     </item>
+                  </addresses>	
+         </customer>\r
+         <!--Optional:-->\r
+         <passwordHash>?</passwordHash>\r
+      </def:customerCustomerRepositoryV1SaveRequest>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4a091450-8515-4f59-9084-813b14d6b48e"/><con:assertion type="Schema Compliance" id="19c0bced-ad2d-4a79-b5b1-76814c1a8135"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="0ce825b8-3c1f-41b3-833b-03974db43df6"/><con:assertion type="GroovyScriptAssertion" id="eeb67a3c-52e3-449b-9f04-4313f7f197ef" name="Script Assertion"><con:configuration><scriptText>def Id = context.expand('${#Response#//*:id}')
+log.info Id
+context.testCase.setPropertyValue("Id",Id)
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Conditional Goto" id="7d6414bf-6271-4209-96e6-ddc0d8174640"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+def Response = context.testCase.getTestStepByName("Add Customer Service").getPropertyValue("Response")
+def holder = new XmlHolder(Response)
+def firstname = holder.getNodeValue("//*:firstname")
+def lastname = holder.getNodeValue("//*:lastname")
+log.info firstname
+log.info lastname
+if ((firstname != "Nil" ) &amp;&amp;  (lastname != "Puj") )
+{
+	log.info "I am into If Step"
+	log.info "Entered $firstname  and $lastname is not Privilaged user"
+	testRunner.gotoStepByName("DeleteByID Service")
+}
+else
+{
+	// Execute the next step as normal
+	log.info "Get Customer List Service"
+}
+</script></con:config></con:testStep><con:testStep type="request" name="Get Customer List Service" id="53f7134e-6e6b-44ba-b272-7e0075e3891a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1GetList</con:operation><con:request name="Get Customer List Service" id="71421096-705f-4ca4-b9d8-57e358376dd5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:customerCustomerRepositoryV1GetListRequest>\r
+         <searchCriteria>\r
+    
+         </searchCriteria>\r
+      </def:customerCustomerRepositoryV1GetListRequest>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7ee9c858-7a0c-41e5-9db9-74470329aedd"/><con:assertion type="Schema Compliance" id="0408a379-d951-460d-866b-d6390ffa38a4"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="eb63c622-7aba-413f-bb4e-cf459807f9db"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Get Customer by ID Service" id="133ad3fc-7568-4391-bd51-73dbb63c4580"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1GetById</con:operation><con:request name="Get Customer by ID Service" id="28217313-bab6-4dd0-8785-0f51220143e4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1GetByIdRequest>
+         <customerId>${#TestCase#Id}</customerId>
+      </def:customerCustomerRepositoryV1GetByIdRequest>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="274a147e-92f9-409c-8ad2-9a7e40f63b76"/><con:assertion type="Schema Compliance" id="8e33d553-27d0-4399-81d5-608d5d174a35"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="149f59c6-35b4-4085-b2c6-69c1a95c8315"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="DeleteByID Service" id="b714a2fb-8226-4223-9159-808631c0f497"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1DeleteById</con:operation><con:request name="DeleteByID Service" id="99ea5621-b84f-4b7c-95c9-d191ca22b01f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1DeleteByIdRequest>
+         <customerId>${#TestCase#Id}</customerId>
+      </def:customerCustomerRepositoryV1DeleteByIdRequest>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4bab1903-377c-4f6a-95a1-42d9c37444b6"/><con:assertion type="Schema Compliance" id="1b8b0da1-d406-4a4f-a089-a7ebbe3362b3"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="64f22a0c-fc66-46eb-80c7-65cf2d65f814"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>Id</con:name><con:value>4556</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
